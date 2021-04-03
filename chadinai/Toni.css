@@ -1,0 +1,36 @@
+body {
+	background:linear-gradient(#002,black);
+	background-size:cover;
+	
+	color:white;
+}
+.wrapper{
+        text-align: center;
+		color:#f0f8ff;
+		max-width:1200px;
+		margin: 0 auto;
+}
+h1,h3{
+	text-align:center;
+     color:#E5004F;
+}
+.img{
+	width: flex;
+	transition: 0.5s sll;
+	align-items:center;
+	font-family: comic sans ms;
+	border: 2px solid gray;
+	border-style: inset;
+	border-style: 10px 10 px 10px 10px;
+	box-shadow: #434343 2px 4px 5px;
+}
+.img:hover{
+	transform:scale(1.1);
+	transition:0.5s all;
+}
+.shvey{
+	display: flex;
+	justify-content: space-between;
+}
+
+
