@@ -1,0 +1,78 @@
+<html>
+	<head>
+		<title>cook</title>
+		<link href="cook.css" rel="stylesheet" type="text/css">
+	</head>
+	<body>
+		<div class="header-div">
+			<a href="../index.html" class="mainhome" style="text-decoration:none;padding:20px;text-transform:uppercase;background:#6f35e2;color:#fff;position:fixed;transform:rotate(-90deg);right:-10px;top:30px;">
+				Домой
+			</a>
+		</div>
+		<div class="wrapper">
+			
+		<marquee>ПРОФЕССИЯ ПОВАРА</marquee>
+		<hr>
+			<div class="display">
+				<div id="time">
+				</div>
+			</div>
+	
+		<hr>
+		<h1>ПЛ №6</h1>
+			<hr/>
+			<p><strong>Повар</strong> - это специалист в чьи обязанности входит приготовление пищи. Помимо самого приготовления, повар отвечает за подготовку продуктов: проверить их на свежесть,помыть, порезать,почистить.Внешняя привлекательность блюда тоже задача повара.Ведь в пище важен не только вкус,но и запах и аппетитный вид.</p>
+		<hr>
+		
+		<div class="images">
+			<img src="IMG-20210324-WA0033.jpg" class="img">
+			<img src="IMG-20210324-WA0032.jpg" class="img">
+			<img src="IMG-20210324-WA0031.jpg" class="img">	
+		</div>
+		<hr>
+		<h4>ДОКУМЕНТЫ ДЛЯ ПОCТУПЛЕНИЯ В ЛИЦЕЙ</h4>
+		<div class="info">
+			<ol>
+				<li>Свидетельство о рождении.</li>
+				<li>Аттестат (9-11 класса).</li>
+				<li>Фото</li>
+				<li>Копия паспорта родителей.</li>
+				<li>ОМС</li>
+				<li>Медсправка</li>
+				<li>Справка c места жительства.</li>
+			</ol>
+		</div>
+		<hr>
+		<div class="h3">
+		<h3>Длительность обучения:<br>На базе 9-класса:(2 года,10 месяцев)<br>На базе 11-класса (10 месяцев)<br>Предоставляется бесплатное общежитие совсеми условиями.</h3>
+		<h2>Адрес: Таласский район,<br>село Кок-Ой,улица Манаса №101,<br>Профeссиональный лицей №6.</h2>
+		</div>
+		<hr>
+		
+		</div>
+		<script>
+		 setInterval(()=>{ 
+		 const time = document.querySelector(".display #time");
+		 let date = new Date();
+		 let hours = date.getHours();
+		 let minutes = date.getMinutes();
+		 let seconds = date.getSeconds();
+		 let day_night = "AM";
+		 if(hours > 12){
+		  day_night = "PM";
+		  hours = hours - 12;
+		  }
+		 if(seconds  < 10){
+		  seconds = "0" + seconds;
+		 }
+		 if(minutes < 10){
+		  minutes = "0" + minutes;
+		 }
+		 if(hours < 10){
+		  hours = "0" + hours;
+		 }
+		 time.textContent = hours + ":" + minutes + ":" + seconds + "" + day_night;
+		 });
+		</script>
+	</body>
+</html>
