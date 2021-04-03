@@ -1,0 +1,12 @@
+body{
+	margin: 0;
+	font-family: Tahoma, sans-serif;
+	height: 100vh;
+}
+
+
+.intro{
+	max-height: 100vh;
+	overflow: hidden;
+	position: absolute;
+}
